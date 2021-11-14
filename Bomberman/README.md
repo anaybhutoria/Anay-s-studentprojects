@@ -1,6 +1,6 @@
-#Bomberman
+# Bomberman
 
-###Compiling
+### Compiling
 To first compile the document type "gcc Bomberman.c"
 
 Now, from this you create a file named 'a.out' and this is the file you have compiled to now run.
