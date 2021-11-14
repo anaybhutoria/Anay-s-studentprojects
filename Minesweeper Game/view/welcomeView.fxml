@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="welcome_Borderpane" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.welcomeController">
+   <top>
+      <Label fx:id="welcomeLabel" text="Welcome to Minesweeper" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <VBox alignment="CENTER_LEFT" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <Label fx:id="instructionsLabel" text="Instructions:" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="instructions" editable="false" text="•&#9;This game consists of a board of squares.&#10;•&#9;Some of the squares contain randomly generated mines, also known as 'bombs'. &#10;•&#9;The other squares don't contain any mines. &#10;•&#9;Right clicking on a square will flag the square and it will turn into a green 'F', squares can be unflagged by right clicking again. &#10;•&#9;Right clicking is useful if you are unsure about the square. &#10;•&#9;If you wish to restart the game, simply press the reset button and a new game will start.&#10;•&#9;In order to win the game click all the squares without encountering any mines or flag all the mines.  &#10;•&#9;If you click on a mine, you lose. &#10;•&#9;Points will be awarded according to the number of bombs on the board.&#10;•&#9;The numbers displayed when you click on the square represents how many bombs are adjacent to the square. ">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="difficultyLabel" text="Difficulty level:">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="difficulty" editable="false" text="Easy: &#10;•&#9;10 rows&#10;•&#9;10 columns&#10;•&#9;10 mines &#10;•&#9;10 points &#10;Medium: &#10;•&#9;16 rows &#10;•&#9;16 columns&#10;•&#9;40 mines &#10;•&#9;40 points &#10;Hard: &#10;•&#9;16 rows &#10;•&#9;30 columns &#10;•&#9;99 mines &#10;•&#9;99 points&#10;">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextArea>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="NameLabel" text="Enter your name below:">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="PlayerName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="500.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin></TextField>
+                  <ComboBox fx:id="setDifficulty" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="setsDifficulty" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#set" text="Start Game">
+                           <HBox.margin>
+                              <Insets right="20.0" top="25.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

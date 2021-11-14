@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="gameBorderpane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+   <center>
+      <VBox fx:id="main" alignment="CENTER" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="30.0" />
+         </BorderPane.margin></VBox>
+   </center>
+   <top>
+      <HBox fx:id="display" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="185.0">
+               <children>
+                  <HBox fx:id="resetArea" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin></HBox>
+                  <Label fx:id="flag" text="" />
+                  <Label fx:id="label_Timer" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
