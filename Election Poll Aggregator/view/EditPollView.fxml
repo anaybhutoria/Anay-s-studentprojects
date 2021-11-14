@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditPollController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="PollToEditLabel" text="Poll to edit:">
+                     <HBox.margin>
+                        <Insets left="40.0" top="40.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Label>
+                  <ComboBox fx:id="EditPoll_combo" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets top="34.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="PartyToUpdateLabel" text="Party to update:">
+                     <HBox.margin>
+                        <Insets left="40.0" top="40.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Label>
+                  <ComboBox fx:id="EditParty_combo" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets top="34.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="NoOfSeatsLabel" text="Projected number of seats:">
+                     <HBox.margin>
+                        <Insets left="40.0" top="40.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="text_ProjNumOfSeats" promptText="Please Enter a Number">
+                     <HBox.margin>
+                        <Insets top="35.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label fx:id="SeatsLabel" text="/345">
+                     <HBox.margin>
+                        <Insets top="50.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="PercentageOfVotesLabel" text="Projected percentage of the vote:">
+                     <HBox.margin>
+                        <Insets left="40.0" top="40.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Label>
+                  <ComboBox fx:id="PercentageOfVotes_combo" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets top="34.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <Label fx:id="percent" text="\%">
+                     <HBox.margin>
+                        <Insets left="3.0" top="39.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="229.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="ClearButton" mnemonicParsing="false" onAction="#ClearPoll" text="Clear">
+               <HBox.margin>
+                  <Insets bottom="80.0" left="150.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="UpdatePartyButton" mnemonicParsing="false" onAction="#UpdateParty" text="Update Party">
+               <HBox.margin>
+                  <Insets bottom="80.0" left="160.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <Label fx:id="ErrorLabel" textFill="#ee0000" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="30.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+</BorderPane>

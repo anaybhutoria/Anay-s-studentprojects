@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VisualizePollController">
+   <center>
+      <HBox>
+         <children>
+            <PieChart fx:id="ProjectedSeats" animated="false" labelLineLength="10.0" title="Projected Number of Seats" />
+            <PieChart fx:id="ProjectedVotes" animated="false" labelLineLength="10.0" title="Projected Percent of Votes" />
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ComboBox fx:id="PollType" minHeight="25.0" minWidth="150.0" GridPane.columnIndex="1" promptText="Select Poll"/>
+            <Label fx:id="numOfPolls" alignment="CENTER" minHeight="25.0" minWidth="150.0" text="Number of Polls: " GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="numOfSeats" alignment="CENTER" minHeight="25.0" minWidth="150.0" text="Number Of Seats: ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </top>
+</BorderPane>
