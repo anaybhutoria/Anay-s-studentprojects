@@ -3,9 +3,9 @@
 These are projects I made to help me learn, Enjoy!
 
 ## C
--Bomberman
--Frogger
+- Bomberman
+- Frogger
 
 ## Java
--Minesweeper
--election poll aggregator
+- Minesweeper
+- Election poll aggregator
