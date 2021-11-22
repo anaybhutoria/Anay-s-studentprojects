@@ -1,23 +1,23 @@
-# FROGGER GAME MADE BY SUVRAT KUMRA AND ANAY BHUTORIA
+# This is a recreation of SEGA's Frogger Game but for Raspberry Pi by suvrat kumra and anay bhutoria
 
 ## Compling
-TO COMPILE THE CODE YOU NEED TO WRITE "make"
-TO RUN THE CODE YOU NEED TO WRITE "./myProg"
+To compile the code you need to write "Make"
+To run the code you need to write "./myprog"
 
 ## Description
-THE CODE RUNS IN 1024x768 PIXEL SCREEN 
+The code runs in 1024x768 pixel screen 
 
-THERE ARE 4 MAPS: 3 NORMAL 1 WATERMAP...
+There are 4 maps: 3 normal 1 watermap...
 
-THERE ARE 4 LIVES FOR THE FROG, 100 MOVES, AND UNLIMITED TIME WHEN THE GAME STARTS
+There are 4 lives for the frog, 100 moves, and unlimited time when the game starts
 
-IF THE FROG IS OUT OF MOVES, THE LIFE WILL BE DECREMENTED AND THE MOVES WILL RESET TO 100
+If the frog is out of moves, the life will be decremented and the moves will reset to 100
 
-THERE ARE 3 KINDS OF SURPRISE PACKAGES : 
-1. +10 MOVES
-2. +1 LIFE
-3. +100 SCORE
+There are 3 kinds of surprise packages : 
+1. +10 moves
+2. +1 life
+3. +100 score
 
-PROBABILITY OF SCORE IS HIGHEST, AND THE PROBABILITY OF LIFE IS LOWEST, 
+Probability of score is highest, and the probability of life is lowest, 
 
-THE SURPRISE CAN POP UP ANYTIME AFTER 30 SECONDS.
+The surprise can pop up anytime after 30 seconds.
