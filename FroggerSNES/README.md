@@ -1,4 +1,4 @@
-# This is a recreation of SEGA's Frogger Game but for Raspberry Pi by suvrat kumra and anay bhutoria
+# This is a recreation of SEGA's Frogger Game but for Raspberry Pi
 
 ## Compling
 To compile the code you need to write "Make"
