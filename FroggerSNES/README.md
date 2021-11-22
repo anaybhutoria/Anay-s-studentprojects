@@ -7,8 +7,6 @@ To run the code you need to write "./myprog"
 ## Description
 The code runs in 1024x768 pixel screen 
 
-There are 4 maps: 3 normal 1 watermap...
-
 There are 4 lives for the frog, 100 moves, and unlimited time when the game starts
 
 If the frog is out of moves, the life will be decremented and the moves will reset to 100
